@@ -10,27 +10,39 @@
         <script src="static/script.js"></script>
         <script type="text/javascript" src="static/slick/slick.min.js"></script>  
         <link rel="stylesheet" type="text/css" href="static/slick/slick.css"/>    
-        <link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css"/>   
+        <link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css"/>           
+          
 
         <title>HAHA</title>
     </head>
-    <body>        
-        <div class="avaliable-list">
-            <div class="title">Disponíveis</div>
-                <div class="show-list">
-                </div>
-            </div>
+    <body>
+        <div class="header">
+            Olá, seja bem vindo ao WatchDecider.<br>
+            Aqui você pode escolher o que assistir com seus amigos quando estiverem em duvidas.
         </div>
         <div class="side-div">
             <div class="selected-side">
-                <div class="title">Escolhidos</div>
+                <div class="topList">
+                    <div class="topText">Suas Escolhas</div>
+                    <div class="topButton" id="add-media" title="Adicionar"><i class="fas fa-plus"></i></div>
+                    <div class="topButton" id="clear-list" title="Limpar Lista"><i class="fas fa-trash"></i></div>
+                    <div class="topButton" id="result-list"title="Resultado"><i class="fas fa-check"></i></div>
+                </div>
                 <div class="selected-list">                    
                 </div>
             </div>
-            <div class="button-area">
-                <div class="add-media">Adicionar</div>
-                <div class="result">Resultado</div>
+        </div>
+        <div class="credits-area">            
+            <div onclick="openLink('github')" class="contact">
+                <i class="fab fa-github"> </i> GitHub
             </div>
+            <div onclick="openLink('linkedin')" class="contact">
+                <i class="fab fa-linkedin"> </i> LinkedIn
+            </div>
+            <div title="caiords" id="my-discord" class="contact">
+                <i class="fab fa-discord"> </i>  Discord
+            </div>
+            <div><i class="fab fa-js"></i> Dev: Caio Reis</div>
         </div>
     </body>
 
